@@ -2,6 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "defaultProject": "truck-tracker",
   "projects": {
     "truck-tracker": {
       "projectType": "application",
@@ -72,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "truck-tracker:build:production"
+              "buildTarget": "truck-tracker:build:production"
             },
             "development": {
-              "browserTarget": "truck-tracker:build:development"
+              "buildTarget": "truck-tracker:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "truck-tracker:build"
+            "buildTarget": "truck-tracker:build"
           }
         },
         "test": {
@@ -106,6 +107,5 @@
         }
       }
     }
-  },
-  "defaultProject": "truck-tracker"
+  }
 }
