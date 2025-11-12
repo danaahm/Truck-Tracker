@@ -11,6 +11,8 @@
   margin: 0;
   place-self: center;
   background-color: rgba(183, 249, 84, 0.238);
+  background-size: cover;
+  background-image: url('./../assets/google-map.png');
 }
 
 .zone {
@@ -35,4 +37,14 @@
   bottom: 20px;
   right: 20px;
   background-color: rgba(104, 6, 6, 0.308);
+}
+
+.truck{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  left: 20px;
+  transition: transform 2s ease-in-out;
+  background-color: 0.5s ease-in-out;
 }
