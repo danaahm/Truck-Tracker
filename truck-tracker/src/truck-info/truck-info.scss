@@ -1,0 +1,18 @@
+.heading-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  place-content: space-evenly;
+}
+h2 {
+  margin-left: 5px;
+}
+
+.cards {
+  margin: 20px;
+}
+
+.details {
+  cursor: pointer;
+  margin-left: 20px;
+}
