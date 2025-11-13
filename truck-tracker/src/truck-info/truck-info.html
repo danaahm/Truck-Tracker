@@ -1,0 +1,19 @@
+<div>
+  <div class="heading-section">
+    <h2>Truck Information</h2>
+    <button matButton="outlined" (click)="restartTruck()">Restart</button>
+
+  </div>
+
+  <div>
+    <mat-card class="cards">
+      <p class="details"><strong>ID:</strong> {{ trucks?.id }}</p>
+      <p class="details"><strong>Status:</strong> {{ trucks?.status }}</p>
+      <p class="details"><strong>Speed:</strong> {{ trucks?.speed }} km/h</p>
+      <p class="details">
+        <strong>Position:</strong> ({{ trucks?.position?.x }}, {{
+        trucks?.position?.y }})
+      </p>
+    </mat-card>
+  </div>
+</div>
